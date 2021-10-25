@@ -44,10 +44,12 @@ a {
   color: var(--color-white);
   text-decoration: none;
 }
+ul {
+  padding: 0px;
+}
 
 li {
   list-style: none;
-  padding: 0px;
 }
 button {
   background-color: transparent;
@@ -64,10 +66,13 @@ button {
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1200px;
   margin: auto;
 }
 
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -234,4 +239,57 @@ p {
 
 .career__period {
   font-size: var(--font-micro);
+}
+/* Skills */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-dark-gray);
+  color: var(--color-light-white);
+  margin: 40px 0px;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+  background-color: var(--color-grey);
+}
+.skill {
+  padding: 20px 30px;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill__progressbar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-grey);
+}
+
+.skill__progress-value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+.etc {
+  background-color: var(--color-light-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
+  height: 50%;
 }
