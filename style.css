@@ -85,7 +85,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0px;
@@ -433,4 +433,39 @@ p {
 
 .name__link {
   color: var(--color-pink);
+}
+
+/* Let's talk */
+
+#contact {
+  background-color: var(--color-pink);
+  padding: 30px;
+}
+
+.contact__title,
+.contact__email {
+  color: var(--color-white);
+}
+
+.contact__rights {
+  color: var(--color-light-white);
+  margin-top: 20px;
+}
+
+.contact__title {
+  margin: 30px 0;
+}
+
+.contact__email {
+  margin-bottom: 20px;
+}
+
+.contact__link i {
+  font-size: 40px;
+  transition: all var(--animation-time) ease-in;
+}
+
+.contact__link i:hover {
+  transform: scale(1.1);
+  color: var(--color-orange);
 }
