@@ -63,17 +63,6 @@ button {
 * {
   box-sizing: border-box;
 }
-/* Sections */
-.section {
-  padding: 50px;
-  text-align: center;
-  margin: auto;
-}
-
-.section__container {
-  max-width: 1200px;
-  margin: auto;
-}
 
 /* Typography */
 
@@ -105,6 +94,18 @@ p {
   margin: 4px 0px;
 }
 
+/* Sections */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* navigation bar */
 
 #navbar {
@@ -120,8 +121,18 @@ p {
   width: 40px;
   padding: 5px;
   margin-right: 15px;
-  /* background-color: #e98c8b; */
-  border-radius: 8px;
+  background-color: var(--color-orange);
+  opacity: 0.6;
+  border-radius: 50%;
+  color: rgb(5, 80, 5);
+}
+
+.navbar__logo-link:hover {
+  transform: scale(1.2);
+}
+
+.navbar__logo-link {
+  transition: transform var(--animation-time) ease-in;
 }
 
 .navbar__logo {
@@ -348,7 +359,7 @@ p {
 .project {
   width: 280px;
   height: 250px;
-  background-color: var(--color-white);
+  background-color: var(--color-light-white);
   margin: 1px;
   display: flex;
   justify-content: center;
