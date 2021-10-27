@@ -133,6 +133,7 @@ p {
 #navbar.navbar--dark {
   background-color: var(--color-pink);
   padding: 8px;
+  z-index: 1;
 }
 
 .navbar__logo-link:hover {
@@ -159,8 +160,10 @@ p {
 
 .navbar__menu__item {
   cursor: pointer;
-  padding: 8px 12px;
-  margin: 0px 4px;
+  white-space: nowrap;
+  border: 0px solid transparent;
+  padding: 8px 16px;
+  margin: 0px;
   border-radius: var(--border-radius);
 }
 
@@ -181,6 +184,7 @@ p {
   position: absolute;
   top: 20px;
   right: 24px;
+  display: none;
 }
 
 /* Home */
