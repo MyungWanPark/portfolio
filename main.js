@@ -4,6 +4,7 @@ const navbar = document.querySelector("#navbar");
 const navbarMenu = document.querySelector(".navbar__menu");
 const contactBtn = document.querySelector(".home__contact");
 const homeContainer = document.querySelector(".home__container");
+const upperIcon = document.querySelector(".arrow-up");
 
 // navbar's background change with scroll height
 document.addEventListener("scroll", () => {
@@ -26,14 +27,30 @@ contactBtn.addEventListener("click", () => {
   scrollIntoViews("#contact");
 });
 
-function scrollIntoViews(selector) {
-  const destElem = document.querySelector(selector);
-  destElem.scrollIntoView({ behavior: "smooth" });
-}
-
 // When scroll down, home content fade away
 document.addEventListener("scroll", () => {
   const opacitySlope =
     window.scrollY / homeContainer.getBoundingClientRect().height;
   homeContainer.style.opacity = 1 - opacitySlope;
 });
+
+// when scrolling down, upper arrow button appears.
+// And when it clicked, it sends to the top.
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeContainer.getBoundingClientRect().height / 2) {
+    upperIcon.classList.add("visible");
+  } else {
+    upperIcon.classList.remove("visible");
+  }
+});
+
+upperIcon.addEventListener("click", () => {
+  scrollIntoViews("#home");
+});
+
+// utility function
+function scrollIntoViews(selector) {
+  const destElem = document.querySelector(selector);
+  destElem.scrollIntoView({ behavior: "smooth" });
+}

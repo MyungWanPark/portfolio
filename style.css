@@ -279,6 +279,7 @@ p {
 .career__period {
   font-size: var(--font-micro);
 }
+
 /* Skills */
 
 #skills {
@@ -504,6 +505,26 @@ p {
   color: var(--color-orange);
 }
 
+/* arrow up btn */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-time) ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* responsive */
 
 @media screen and (max-width: 768px) {
