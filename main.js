@@ -5,6 +5,9 @@ const navbarMenu = document.querySelector(".navbar__menu");
 const contactBtn = document.querySelector(".home__contact");
 const homeContainer = document.querySelector(".home__container");
 const upperIcon = document.querySelector(".arrow-up");
+const projectBtns = document.querySelector(".project__categories");
+const projects = document.querySelectorAll(".project");
+const projectContainer = document.querySelector(".work__projects");
 
 // navbar's background change with scroll height
 document.addEventListener("scroll", () => {
@@ -47,6 +50,28 @@ document.addEventListener("scroll", () => {
 
 upperIcon.addEventListener("click", () => {
   scrollIntoViews("#home");
+});
+
+// my work project classification
+projectBtns.addEventListener("click", (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+
+  if (filter == "null") {
+    return;
+  }
+  projectContainer.classList.add("animation-out");
+
+  setTimeout(() => {
+    projects.forEach((project) => {
+      let typeOfProject = project.dataset.type;
+      if (filter === "*" || filter === typeOfProject) {
+        project.classList.remove("invisible");
+      } else {
+        project.classList.add("invisible");
+      }
+    });
+    projectContainer.classList.remove("animation-out");
+  }, 300);
 });
 
 // utility function

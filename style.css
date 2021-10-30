@@ -378,6 +378,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-time) ease-out;
+}
+
+.work__projects.animation-out {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
 }
 
 .project {
@@ -389,6 +396,10 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
