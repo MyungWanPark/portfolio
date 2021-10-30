@@ -9,6 +9,7 @@ const projectBtns = document.querySelector(".project__categories");
 const categoryBtns = document.querySelectorAll(".category__btn");
 const projects = document.querySelectorAll(".project");
 const projectContainer = document.querySelector(".work__projects");
+const toggleBtn = document.querySelector(".navbar__toggle-btn");
 
 // navbar's background change with scroll height
 document.addEventListener("scroll", () => {
@@ -83,6 +84,10 @@ projectBtns.addEventListener("click", (e) => {
   }, 300);
 });
 
+// toggle button activate
+toggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("active");
+});
 // utility function
 function scrollIntoViews(selector) {
   const destElem = document.querySelector(selector);
