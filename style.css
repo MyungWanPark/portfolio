@@ -167,10 +167,6 @@ p {
   border-radius: var(--border-radius);
 }
 
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-}
-
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
   width: 100%;
@@ -347,14 +343,14 @@ p {
   margin: 24px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-pink);
   color: var(--color-white);
 }
 
 .category__btn:hover .category__count,
-.category__btn.active .category__count {
+.category__btn.selected .category__count {
   opacity: 1;
   top: 0px;
 }

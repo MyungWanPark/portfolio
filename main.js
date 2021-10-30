@@ -6,6 +6,7 @@ const contactBtn = document.querySelector(".home__contact");
 const homeContainer = document.querySelector(".home__container");
 const upperIcon = document.querySelector(".arrow-up");
 const projectBtns = document.querySelector(".project__categories");
+const categoryBtns = document.querySelectorAll(".category__btn");
 const projects = document.querySelectorAll(".project");
 const projectContainer = document.querySelector(".work__projects");
 
@@ -59,6 +60,14 @@ projectBtns.addEventListener("click", (e) => {
   if (filter == "null") {
     return;
   }
+  //   remove selected button and select category button.
+  const selectedCategory = document.querySelector(".category__btn.selected");
+  selectedCategory.classList.remove("selected");
+
+  const target =
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
+
   projectContainer.classList.add("animation-out");
 
   setTimeout(() => {
