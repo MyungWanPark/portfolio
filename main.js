@@ -20,10 +20,17 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// toggle button activate
+toggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("active");
+});
+
 // scroll to the tapped menu
 navbarMenu.addEventListener("click", (event) => {
   const selectedMenuElem = event.target;
   const destID = selectedMenuElem.dataset.link;
+
+  navbarMenu.classList.remove("active");
   scrollIntoViews(destID);
 });
 
@@ -84,10 +91,6 @@ projectBtns.addEventListener("click", (e) => {
   }, 300);
 });
 
-// toggle button activate
-toggleBtn.addEventListener("click", () => {
-  navbarMenu.classList.toggle("active");
-});
 // utility function
 function scrollIntoViews(selector) {
   const destElem = document.querySelector(selector);
