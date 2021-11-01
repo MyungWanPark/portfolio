@@ -167,7 +167,8 @@ p {
   border-radius: var(--border-radius);
 }
 
-.navbar__menu__item:hover {
+.navbar__menu__item:hover,
+.navbar__menu__item.selected {
   background-color: var(--color-dark-pink);
   width: 100%;
   text-align: center;

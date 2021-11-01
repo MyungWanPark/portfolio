@@ -91,6 +91,43 @@ projectBtns.addEventListener("click", (e) => {
   }, 300);
 });
 
+// When related area comes, navbar button activate
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const entryNav = document.querySelector(
+        `.navbar__menu__item[data-link='#${entry.target.id}']`
+      );
+
+      if (entryNav) {
+        entryNav.classList.add("selected");
+      }
+    } else {
+      const leavingNav = document.querySelector(
+        `.navbar__menu__item[data-link='#${entry.target.id}']`
+      );
+
+      if (leavingNav) {
+        leavingNav.classList.remove("selected");
+      }
+    }
+  });
+};
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+const sections = document.querySelectorAll("section");
+console.log("sections", sections);
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
 // utility function
 function scrollIntoViews(selector) {
   const destElem = document.querySelector(selector);
