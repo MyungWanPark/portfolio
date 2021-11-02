@@ -92,44 +92,69 @@ projectBtns.addEventListener("click", (e) => {
 });
 
 // When related area comes, navbar button activate
-const callback = (entries, observer) => {
+
+const sectionIds = [
+  "#home",
+  "#about",
+  "#skills",
+  "#my_work",
+  "#testimonials",
+  "#contact",
+];
+const sections = sectionIds.map((id) => document.querySelector(id));
+const navItems = sectionIds.map((id) =>
+  document.querySelector(`[data-link="${id}"]`)
+);
+
+let activeNavIndex = 0;
+let activeNav = navItems[0];
+
+const oberverCallback = (entries, observer) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const entryNav = document.querySelector(
-        `.navbar__menu__item[data-link='#${entry.target.id}']`
-      );
-
-      if (entryNav) {
-        entryNav.classList.add("selected");
-      }
-    } else {
-      const leavingNav = document.querySelector(
-        `.navbar__menu__item[data-link='#${entry.target.id}']`
-      );
-
-      if (leavingNav) {
-        leavingNav.classList.remove("selected");
+    if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+      const selectedIndex = sectionIds.indexOf(`#${entry.target.id}`);
+      if (entry.boundingClientRect.y < 0) {
+        activeNavIndex = selectedIndex + 1;
+      } else {
+        activeNavIndex = selectedIndex - 1;
       }
     }
   });
 };
 
-const options = {
+const observerOptions = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5,
+  threshold: 0.3,
 };
 
-const observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(oberverCallback, observerOptions);
 
-const sections = document.querySelectorAll("section");
-console.log("sections", sections);
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+window.addEventListener("wheel", () => {
+  if (window.scrollY === 0) {
+    activeNavIndex = 0;
+  } else if (
+    Math.round(window.scrollY + window.innerHeight) >=
+    document.body.clientHeight
+  ) {
+    activeNavIndex = navItems.length - 1;
+  }
+  activateNav(navItems[activeNavIndex]);
 });
 
 // utility function
 function scrollIntoViews(selector) {
   const destElem = document.querySelector(selector);
   destElem.scrollIntoView({ behavior: "smooth" });
+  activateNav(navItems[sectionIds.indexOf(selector)]);
+}
+
+function activateNav(selectedNav) {
+  activeNav.classList.remove("active");
+  activeNav = selectedNav;
+  activeNav.classList.add("active");
 }

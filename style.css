@@ -168,7 +168,7 @@ p {
 }
 
 .navbar__menu__item:hover,
-.navbar__menu__item.selected {
+.navbar__menu__item.active {
   background-color: var(--color-dark-pink);
   width: 100%;
   text-align: center;
