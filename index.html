@@ -61,8 +61,8 @@
           alt="Wan's profile picture"
           class="home__img"
         />
-        <h1 class="home__title">Hello,<br />I'm the master of trial!</h1>
-        <h2 class="home__description">A software engineer who pursue beauty</h2>
+        <h1 class="home__title">Hello,<br />I love to try new things!</h1>
+        <h2 class="home__description">A software engineer who is growing up</h2>
         <button class="home__contact">Contact Me</button>
       </div>
     </section>
@@ -71,10 +71,10 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        I like learning new knowledge and doing projects using that knowledge. I
-        also believe that I grow through the process of discovering and handling
-        errors. I also enjoy listening to people's stories and communicating
-        each other.
+        I like learning new knowledge and doing projects using related
+        knowledge. I believe that I grow through the process of discovering and
+        handling errors. I also enjoy listening to people's opinions and
+        communicating each other.
       </p>
 
       <div class="about__majors">
@@ -114,9 +114,23 @@
 
       <div class="about__careers">
         <div class="career">
+          <img
+            src="imgs/career/nomad_logo.PNG"
+            alt="Nomad Logo"
+            class="career__logo"
+          />
+          <div class="career__description">
+            <p class="career__name">
+              노마드 코더 강의 수료 HTML, CSS, JS, NodeJS, React
+            </p>
+            <p class="career__period">2020.10 ~ 2021.11</p>
+          </div>
+        </div>
+
+        <div class="career">
           <img src="imgs/career/kpi.png" alt="KPI Logo" class="career__logo" />
           <div class="career__description">
-            <p class="career__name">빅데이터 DB분석 전문가 과정</p>
+            <p class="career__name">예비신입사원 SW실무역량강화</p>
             <p class="career__period">2017.06 ~ 2017.07</p>
           </div>
         </div>
@@ -130,6 +144,9 @@
           <div class="career__description">
             <p class="career__name">
               한국외대 Industrial Management Engineering (Grade 3.9 / 4.5)
+              <br />
+              - 컴퓨터 프로그래밍, 객체지향 프로그래밍, 자료구조 및 알고리즘,
+              정보시스템개발 및 실습, 캡스톤 디자인 프로젝트 수료
             </p>
             <p class="career__period">2012.03 ~ 2020.08</p>
           </div>
@@ -145,9 +162,9 @@
         <p>
           I like to learn and apply new skills. I started studying HTML and CSS
           because I liked coloring and laying them out since I was young. I
-          learned JS to create more dynamic site. In addition, I was curious
-          about the process in the server side, so I experienced building a
-          basic backend using Nodejs.
+          learned JS and React.js to create more interactive site. In addition,
+          I was curious about the process in the server side, so I experienced
+          building a basic backend using Nodejs.
         </p>
         <div class="skillset">
           <div class="skillset__left">
@@ -155,26 +172,6 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__progressbar">
-                <div class="skill__progress-value" style="width: 90%"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__progressbar">
-                <div class="skill__progress-value" style="width: 80%"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill__description">
-                <span>Javascript</span>
                 <span>85%</span>
               </div>
               <div class="skill__progressbar">
@@ -184,21 +181,41 @@
 
             <div class="skill">
               <div class="skill__description">
-                <span>React</span>
-                <span>50%</span>
+                <span>CSS</span>
+                <span>75%</span>
               </div>
               <div class="skill__progressbar">
-                <div class="skill__progress-value" style="width: 50%"></div>
+                <div class="skill__progress-value" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>Javascript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__progressbar">
+                <div class="skill__progress-value" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>55%</span>
+              </div>
+              <div class="skill__progressbar">
+                <div class="skill__progress-value" style="width: 55%"></div>
               </div>
             </div>
 
             <div class="skill">
               <div class="skill__description">
                 <span>NodeJS</span>
-                <span>40%</span>
+                <span>50%</span>
               </div>
               <div class="skill__progressbar">
-                <div class="skill__progress-value" style="width: 40%"></div>
+                <div class="skill__progress-value" style="width: 50%"></div>
               </div>
             </div>
           </div>
@@ -234,10 +251,10 @@
         <h3>projects</h3>
         <div class="project__categories">
           <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">5</span>
+            All<span class="category__count">6</span>
           </button>
           <button class="category__btn" data-filter="front-end">
-            Front-end<span class="category__count">3</span>
+            Front-end<span class="category__count">4</span>
           </button>
           <button class="category__btn" data-filter="back-end">
             Back-end<span class="category__count">1</span>
@@ -249,13 +266,29 @@
 
         <div class="work__projects">
           <a
-            href="https://github.com/MyungWanPark/portfolio"
+            href="https://github.com/MyungWanPark/TIL/tree/main/Algorythm"
             class="project"
             data-type="front-end"
             target="_blank"
           >
             <img
               src="imgs/projects/project1.png"
+              alt="project1"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>React.js</h3>
+              <span>React.js, JSX,Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/MyungWanPark/portfolio"
+            class="project"
+            data-type="front-end"
+            target="_blank"
+          >
+            <img
+              src="imgs/projects/project2.png"
               alt="project1"
               class="project__img"
             />
@@ -271,7 +304,7 @@
             target="_blank"
           >
             <img
-              src="imgs/projects/project2.png"
+              src="imgs/projects/project3.png"
               alt="project1"
               class="project__img"
             />
@@ -287,7 +320,7 @@
             target="_blank"
           >
             <img
-              src="imgs/projects/project3.png"
+              src="imgs/projects/project4.png"
               alt="project1"
               class="project__img"
             />
@@ -303,7 +336,7 @@
             target="_blank"
           >
             <img
-              src="imgs/projects/project4.png"
+              src="imgs/projects/project5.png"
               alt="project1"
               class="project__img"
             />
@@ -312,6 +345,7 @@
               <span>NodeJS, Express and MongoDB</span>
             </div>
           </a>
+
           <a
             href="https://github.com/MyungWanPark/TIL/tree/main/Algorythm"
             class="project"
@@ -319,7 +353,7 @@
             target="_blank"
           >
             <img
-              src="imgs/projects/project7.png"
+              src="imgs/projects/project6.png"
               alt="project1"
               class="project__img"
             />
