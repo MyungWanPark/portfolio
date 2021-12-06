@@ -4,13 +4,12 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-blue: #2196f3;
+  --color-dark-blue: #0069c0;
   --color-black: #000000;
   --color-dark-gray: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
 
@@ -132,7 +131,8 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
+  opacity: 0.8;
   padding: 16px;
 }
 
@@ -169,7 +169,7 @@ p {
 
 .navbar__menu__item:hover,
 .navbar__menu__item.active {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-blue);
   width: 100%;
   text-align: center;
   border: 0px;
@@ -187,15 +187,18 @@ p {
 /* Home */
 
 #home {
-  background: url("imgs/background-img.png") center/cover no-repeat;
+  background-image: url("imgs/background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 10% 90%;
+  background-size: 100% 100%;
   text-align: center;
   padding: 40px;
   padding-top: 150px;
 }
 
 .home__img {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   border: 2px solid var(--color-light-white);
   border-radius: 50%;
 }
@@ -237,6 +240,7 @@ p {
   line-height: 170px;
   font-size: 70px;
   color: var(--color-blue);
+  opacity: 0.8;
   border: 1px solid var(--color-blue);
   border-radius: 50%;
   margin: auto;
@@ -247,7 +251,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-blue);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -349,7 +353,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   color: var(--color-white);
 }
 
@@ -479,13 +483,14 @@ p {
 }
 
 .name__link {
-  color: var(--color-pink);
+  color: var(--color-blue);
 }
 
 /* Let's talk */
 
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
+  opacity: 0.8;
   padding: 30px;
 }
 
@@ -526,7 +531,7 @@ p {
   width: 60px;
   height: 60px;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   border-radius: 50%;
   opacity: 0;
   pointer-events: none;
@@ -556,7 +561,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
   }
 
   .navbar__menu {
@@ -567,7 +572,7 @@ p {
   }
   .navbar__menu.active {
     display: block;
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     margin: 0px;
   }
   .section {
