@@ -10,9 +10,9 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 ### Home
 
-<br/>
-
 프로필 사진과 포트폴리오 목차, 간단한 자기소개를 확인할 수 있는 곳입니다. 
+
+<br/>
 
 <img width="800" alt="port_home-min" src="https://user-images.githubusercontent.com/56289900/144966519-f327ff24-5c10-4d0f-836a-b133a5c523c6.PNG">
 
