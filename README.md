@@ -15,7 +15,9 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 <img width="800" alt="port_home-min" src="https://user-images.githubusercontent.com/56289900/144966519-f327ff24-5c10-4d0f-836a-b133a5c523c6.PNG">
 
 <br/>
+
 <br/>
+
 ### About
 
 프로필 정보와 프로그래밍 학습한 이력, 사용할 수 있는 기술스택을 소개하였습니다.
@@ -23,7 +25,9 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 <img width="800" alt="port_about-min" src="https://user-images.githubusercontent.com/56289900/144966510-c1ee5c1b-b129-4059-845d-a183ab85cb40.PNG">
 
 <br/>
+
 <br/>
+
 ### Skills
 
 사용 가능한 기술스택과 그 숙련도를 나타내었습니다.
