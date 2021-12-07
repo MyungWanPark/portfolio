@@ -10,15 +10,17 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 ### Home
 
+<br/>
+
 프로필 사진과 포트폴리오 목차, 간단한 자기소개를 확인할 수 있는 곳입니다. 
 
 <img width="800" alt="port_home-min" src="https://user-images.githubusercontent.com/56289900/144966519-f327ff24-5c10-4d0f-836a-b133a5c523c6.PNG">
 
 <br/>
 
-<br/>
-
 ### About
+
+<br/>
 
 프로필 정보와 프로그래밍 학습한 이력, 사용할 수 있는 기술스택을 소개하였습니다.
 
@@ -26,9 +28,9 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 <br/>
 
-<br/>
-
 ### Skills
+
+<br/>
 
 사용 가능한 기술스택과 그 숙련도를 나타내었습니다.
 
@@ -38,6 +40,8 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 ### Projects
 
+<br/>
+
 진행한 프로젝트들을 프론트엔드, 백엔드, 알고리즘으로 카테고리를 나누었고, 개별 이미지에 깃허브 링크를 걸었습니다.
 
 <img width="800" alt="port_projects-min" src="https://user-images.githubusercontent.com/56289900/144966521-c1a65fdd-6413-45bd-ad02-4d82e53881ab.PNG">
@@ -45,6 +49,8 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 <br/>
 
 ### Contact
+
+<br/>
 
 저에게 연락가능한 방법을 표시해두었습니다. 깃허브 로고를 클릭하면, 깃허브와 연결됩니다. 
 
