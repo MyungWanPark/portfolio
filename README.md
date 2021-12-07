@@ -10,40 +10,50 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 ### Home
 
-저의 사진과 목차를 확인할 수 있는 곳입니다. 
+프로필 사진과 포트폴리오 목차, 간단한 자기소개를 확인할 수 있는 곳입니다. 
 
-<img width="800" alt="port_home-min" src="https://user-images.githubusercontent.com/56289900/144784339-113d5526-9163-48c2-8f8b-463631411d62.PNG">
+<br/>
+
+<img width="800" alt="port_home-min" src="https://user-images.githubusercontent.com/56289900/144966519-f327ff24-5c10-4d0f-836a-b133a5c523c6.PNG">
 
 <br/>
 
 ### About
 
-저의 간단한 프로필과 프로그래밍을 학습한 이력, 사용할 수 있는 기술스택을 소개하였습니다.
+프로필 정보와 프로그래밍 학습한 이력, 사용할 수 있는 기술스택을 소개하였습니다.
 
-<img width="800" alt="port_about-min" src="https://user-images.githubusercontent.com/56289900/144784330-cd50d33c-e66f-4e9b-b043-c20db57661c6.PNG">
+<br/>
+
+<img width="800" alt="port_about-min" src="https://user-images.githubusercontent.com/56289900/144966510-c1ee5c1b-b129-4059-845d-a183ab85cb40.PNG">
 
 <br/>
 
 ### Skills
 
-제가 사용 가능한 기술스택과 그 숙련도를 나타내었습니다.
+사용 가능한 기술스택과 그 숙련도를 나타내었습니다.
 
-<img width="800" alt="port_skills-min" src="https://user-images.githubusercontent.com/56289900/144784350-2781f349-dbfa-424b-8d8e-28fe25ce08c9.PNG">
+<br/>
+
+<img width="800" alt="port_skills-min" src="https://user-images.githubusercontent.com/56289900/144966524-584cce53-7a7f-4ca4-978a-1d9f3abb5ca7.PNG">
 
 <br/>
 
 ### Projects
 
-진행한 프로젝트들을 프론트엔드, 백엔드, 알고리즘으로 카테고리를 나누어 깃허브 링크를 걸었습니다.
+진행한 프로젝트들을 프론트엔드, 백엔드, 알고리즘으로 카테고리를 나누었고, 개별 이미지에 깃허브 링크를 걸었습니다.
 
-<img width="800" alt="port_projects-min" src="https://user-images.githubusercontent.com/56289900/144784345-2c86b3b6-993e-4a87-a4f2-663c01610871.PNG">
+<br/>
+
+<img width="800" alt="port_projects-min" src="https://user-images.githubusercontent.com/56289900/144966521-c1a65fdd-6413-45bd-ad02-4d82e53881ab.PNG">
 
 <br/>
 
 ### Contact
 
-저에게 연락가능한 방법을 표시해두었습니다. 깃허브 로고를 통해 깃허브 링크를 걸었습니다.
+저에게 연락가능한 방법을 표시해두었습니다. 깃허브 로고를 클릭하면, 깃허브와 연결됩니다. 
 
-<img width="800" alt="port_contact-min" src="https://user-images.githubusercontent.com/56289900/144784336-e5b178d7-4a76-47fd-a61c-4ee6d0f8526b.PNG">
+<br/>
+
+<img width="800" alt="port_contact-min" src="https://user-images.githubusercontent.com/56289900/144966518-de6356cf-4166-4f1b-bb8e-52641e46d21a.PNG">
 
 링크주소: <a href="https://myungwanpark.github.io/portfolio/" target="_blank">포트폴리오 웹사이트 보러가기</a>
