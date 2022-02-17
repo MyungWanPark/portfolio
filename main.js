@@ -39,12 +39,28 @@ contactBtn.addEventListener("click", () => {
   scrollIntoViews("#contact");
 });
 
+//
+const content =
+  "Hello. I'm Myung Wan, \n A software engineer who is passionate on solving problems.";
+const text = document.querySelector(".home__description-text");
+let i = 0;
+
+function typing() {
+  let txt = content[i++];
+  text.innerHTML += txt === "\n" ? "<br/>" : txt;
+  if (i > content.length) {
+    text.textContent = "";
+    i = 0;
+  }
+}
+setInterval(typing, 150);
+
 // When scroll down, home content fade away
-document.addEventListener("scroll", () => {
+/* document.addEventListener("scroll", () => {
   const opacitySlope =
     window.scrollY / homeContainer.getBoundingClientRect().height;
   homeContainer.style.opacity = 1 - opacitySlope;
-});
+}); */
 
 // when scrolling down, upper arrow button appears.
 // And when it clicked, it sends to the top.

@@ -114,7 +114,7 @@ p {
   background-color: transparent;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 10px;
   transition: all var(--animation-time) ease-in;
   z-index: 1;
 }
@@ -133,7 +133,7 @@ p {
 #navbar.navbar--dark {
   background-color: var(--color-blue);
   opacity: 0.8;
-  padding: 16px;
+  padding: 10px;
 }
 
 .navbar__logo-link:hover {
@@ -165,6 +165,7 @@ p {
   padding: 8px 16px;
   margin: 0px;
   border-radius: var(--border-radius);
+  font-weight: var(--weight-bold);
 }
 
 .navbar__menu__item:hover,
@@ -173,6 +174,7 @@ p {
   width: 100%;
   text-align: center;
   border: 0px;
+  opacity: 0.9;
 }
 
 .navbar__toggle-btn {
@@ -194,22 +196,53 @@ p {
   text-align: center;
   padding: 40px;
   padding-top: 150px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: absolute;
+  left: 20%;
+  top: 70%; */
 }
 
 .home__img {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   /* border: 2px solid var(--color-light-white); */
   border-radius: 50%;
 }
 
-.home__description,
-.home__title {
-  color: var(--color-white);
+.home__description {
+  color: lightseagreen;
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: italic;
 }
+
+.home__description-blick {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+/* .home__description {
+  color: var(--color-light-grey);
+} */
 
 .home__contact {
   color: var(--color-white);
+  width: 200px;
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -273,7 +306,8 @@ p {
 
 .career__name,
 .career__period {
-  color: var(--color-light-grey);
+  color: black;
+  font-weight: 200;
 }
 
 .career__name {
