@@ -56,4 +56,4 @@ Javascript와 WebAPIs를 활용하여 저(박명완)를 소개할 수 있는 포
 
 <img width="800" alt="contact-min" src="https://user-images.githubusercontent.com/56289900/154445127-cb62619e-8bbb-4aa6-93c8-dee1488050f4.PNG">
 
-배포 주소: <a href="https://myungwanpark.github.io/portfolio/" target="_blank">포트폴리오 웹사이트 보러가기</a>
+배포 주소: 👉 <a href="https://myungwanpark.github.io/portfolio/" target="_blank">포트폴리오 웹사이트 보러가기(클릭)</a> 👈
