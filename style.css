@@ -199,7 +199,7 @@ p {
 .home__img {
   height: 300px;
   width: 300px;
-  border: 2px solid var(--color-light-white);
+  /* border: 2px solid var(--color-light-white); */
   border-radius: 50%;
 }
 
@@ -251,7 +251,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-blue);
+  color: var(--color-orange);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -301,6 +301,9 @@ p {
   color: var(--color-white);
 }
 
+.skillset__title-left {
+  padding-top: 20px;
+}
 .skillset__left {
   flex-basis: 60%;
 }
@@ -308,6 +311,10 @@ p {
 .skillset__right {
   flex-basis: 40%;
   background-color: var(--color-grey);
+}
+
+.skillset__title-right {
+  margin-bottom: 30px;
 }
 .skill {
   padding: 20px 30px;
@@ -334,6 +341,7 @@ p {
 
 .tools,
 .etc {
+  align-items: center;
   padding: 20px;
   height: 50%;
 }
