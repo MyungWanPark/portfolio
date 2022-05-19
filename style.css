@@ -264,7 +264,7 @@ p {
 .about__majors {
   margin: 80px 0px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .major__icon {
